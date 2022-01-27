@@ -1,0 +1,8 @@
+@mixin redes{
+    p:hover{
+      text-decoration: none;
+      color: map-get($color, primary);;
+      font-size: larger;
+      font-weight: 800;
+    }
+}

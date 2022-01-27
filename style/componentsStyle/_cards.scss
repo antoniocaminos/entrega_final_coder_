@@ -1,0 +1,9 @@
+.card-header{
+    color: map-get($color , primary )
+}
+.card-body{
+    color: map-get($color , secondary );
+}
+.card-title{
+    color: map-get($color , secondary);
+}

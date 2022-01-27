@@ -1,0 +1,26 @@
+@mixin cabecera{
+                                      h1{
+    font-weight: bold;
+    color: map-get($color, primary );
+    text-decoration: none;
+    background-image: linear-gradient(red, purple);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+                                        } 
+                                      a{
+      text-decoration: none;
+      background-image: linear-gradient(red, purple);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s; }
+      h1:hover, h1:focus, a:hover, a:focus{
+      background-size: 100% 2px;          }
+                                        p{
+    font-weight: bolder;
+    background-color: rgb(212, 212, 212);
+    color: map-get($color, primary );
+                                          }
+    }

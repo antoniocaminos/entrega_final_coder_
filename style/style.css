@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.card-header {
+  color: black; }
+
+.card-body {
+  color: white; }
+
+.card-title, .card-header .card-body {
+  color: white; }
+
+.container-grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto;
+  grid-auto-rows: minmax(300px, auto);
+  width: 100%; }
+
+.cabecera {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  margin-left: 0;
+  background-image: url("../assets/img/fondo_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.area {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  align-content: space-around; }
+
+.area {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  height: 100px; }
+
+.area .paragraph {
+  text-align: center;
+  font-weight: 800; }
+
+.cabecera h1 {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  background-image: linear-gradient(red, purple);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
+
+.cabecera a {
+  text-decoration: none;
+  background-image: linear-gradient(red, purple);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
+
+.cabecera h1:hover, .cabecera h1:focus, .cabecera a:hover, .cabecera a:focus {
+  background-size: 100% 2px; }
+
+.cabecera p {
+  font-weight: bolder;
+  background-color: #d4d4d4;
+  color: black; }
+
+.paragraph {
+  display: flex;
+  text-align: center;
+  font-weight: 1200; }
+
+.area button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.aside1 {
+  grid-column: 1;
+  grid-row: 3 / 5; }
+
+.carrusel {
+  grid-column: 1 /5;
+  grid-row: 3 / 5; }
+
+.carousel-inner img {
+  width: 100%; }
+
+.aside1 {
+  border-spacing: auto; }
+
+.aside2 {
+  grid-column: 2;
+  grid-row: 3/5;
+  background-image: url("../assets/img/Tronador.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.aside2 h4 {
+  padding: 20px 20px 20px 20px; }
+
+.aside2 button {
+  margin: 20px 20px 20px 20px; }
+
+.info {
+  grid-column: 3 /5;
+  grid-row: 3;
+  background-image: url("../assets/img/1024px-SAC-A.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7; }
+
+.info h4 {
+  padding: 10px 10px 60px 60px;
+  color: black;
+  font-weight: 900; }
+
+.info p {
+  color: black;
+  font-weight: bold;
+  padding: 20px 20px; }
+
+.news {
+  grid-column: 3 / 5;
+  grid-row: 4;
+  background-image: url("../assets/img/LIBRO-CONAE.jpg"); }
+  .news .btn-danger {
+    position: relative;
+    margin: 100px 70px 100px 100px; }
+
+.footer {
+  grid-column: 1 / 5;
+  grid-row: 5; }
+
+/*33333333333333333333333333333333333
+3333333333               333333333333 
+3333333333     @medias   333333333333
+3333333333               333333333333
+3333333333333333333333333333333333333*/
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+  .area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+    flex-basis: 50vw;
+    margin: 25px auto;
+    padding: 0; } }
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer .area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+    flex-basis: 50vw;
+    margin: 25px auto;
+    padding: 0; } }
